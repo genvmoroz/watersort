@@ -37,6 +37,7 @@ func main() {
 	mFlask.Put(model.Red)
 	mFlask.Put(model.Pink)
 	mFlask.Put(model.Purple)
+	mFlask.Put(model.Yellow)
 	dFlask := drawable.NewFlask(&mFlask, res)
 	dFlask.Draw(img, image.Rect(200, 50, 251, 351))
 

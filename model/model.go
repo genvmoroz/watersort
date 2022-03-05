@@ -56,6 +56,15 @@ func (f *Flask) Get() Colour {
 	return colour
 }
 
+func (f Flask) All() [4]Colour {
+	return [4]Colour{
+		f.colours[0],
+		f.colours[1],
+		f.colours[2],
+		f.colours[3],
+	}
+}
+
 func (f Flask) Empty() bool {
 	return f.index == -1
 }
